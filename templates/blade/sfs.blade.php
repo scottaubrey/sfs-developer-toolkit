@@ -235,19 +235,6 @@
 								<th class="sfs__label"></th>
 							</tr>
 							<tr>
-								<td class="sfs__text">Home and contents</td>
-								<td class="sfs__table-highlight sfs__output sfs__number_box" id="total-home-contents">
-									&pound;{{ number_format($sfs['monthly-outgoings']['fixed-costs']['total-home-contents'], 2) }}
-								</td>
-							</tr>
-							<tr>
-								<td class="sfs__text">Utilities</td>
-								<td class="sfs__table-highlight sfs__output sfs__number_box" id="total-utilities">
-									&pound;{{ number_format($sfs['monthly-outgoings']['fixed-costs']['total-utilities'], 2) }}
-								</td>
-							</tr>
-
-							<tr>
 								<td class="sfs__text">Rent</td>
 							 	<td class="sfs__table-highlight sfs__output sfs__number_box" id="rent">
 							 		&pound;{{ number_format($sfs['monthly-outgoings']['fixed-costs']['rent'], 2) }}
