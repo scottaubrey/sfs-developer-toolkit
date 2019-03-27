@@ -529,8 +529,8 @@
 										?>
 										<tr>
 											<td class="sfs__text sfs__output">{{ $creditor }}</td>
-											<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['owed'], 2) }}</td>
-											<td class="sfs__text sfs__text--col-3 sfs__output">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['offer'], 2) }}</td>
+											<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['amount-owed'], 2) }}</td>
+											<td class="sfs__text sfs__text--col-3 sfs__output">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['repayment-offer'], 2) }}</td>
 										</tr>
 										<?php
 									} 
@@ -605,11 +605,11 @@
 										?>
 										<tr>
 											<td class="sfs__text sfs__output">{{ $creditor }}</td>
-											<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['owed'], 2) }}</td>
+											<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['amount-owed'], 2) }}</td>
 											<td class="sfs__text sfs__text--col-3 sfs__output">
 												@if($sfs['debts']['non-priority-debts'][$i]['ccj']) Y @else N @endif
 											</td>
-											<td class="sfs__text sfs__text--col-4 sfs__output">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['offer'],2 ) }}</td>
+											<td class="sfs__text sfs__text--col-4 sfs__output">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['repayment-offer'],2 ) }}</td>
 										</tr>
 										<?php
 									} 
@@ -718,8 +718,8 @@
 											?>
 											<tr>
 												<td class="sfs__text sfs__output">{{ $creditor }}</td>
-												<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['owed'], 2) }}</td>
-												<td class="sfs__text sfs__text--col-3 sfs__output">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['offer'], 2) }}</td>
+												<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['amount-owed'], 2) }}</td>
+												<td class="sfs__text sfs__text--col-3 sfs__output">&pound;{{ number_format($sfs['debts']['priority-debts'][$i]['repayment-offer'], 2) }}</td>
 											</tr>
 											<?php
 										} 
@@ -772,11 +772,11 @@
 											?>
 											<tr>
 												<td class="sfs__text sfs__output">{{ $creditor }}</td>
-												<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['owed'], 2) }}</td>
+												<td class="sfs__table-highlight sfs__output sfs__number_box">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['amount-owed'], 2) }}</td>
 												<td class="sfs__text sfs__text--col-3 sfs__output">
 													@if($sfs['debts']['non-priority-debts'][$i]['ccj']) Y @else N @endif
 												</td>
-												<td class="sfs__text sfs__text--col-4 sfs__output">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['offer'],2 ) }}</td>
+												<td class="sfs__text sfs__text--col-4 sfs__output">&pound;{{ number_format($sfs['debts']['non-priority-debts'][$i]['repayment-offer'],2 ) }}</td>
 											</tr>
 											<?php
 										} 
